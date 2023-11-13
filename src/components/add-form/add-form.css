@@ -1,0 +1,121 @@
+.add-form {
+    background: #71ccca;
+    box-shadow: 20px 20px 60px #60adac, -20px -20px 60px #82ebe8;
+    margin: 6px 12px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.form-item{
+    margin: 12px 0px;
+    width: 80%;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.form-item label{
+    background-color: lightgray;
+    padding: 2px 12px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.form-item input{
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 80%;
+}
+
+.category-container-parent{
+    display: flex;
+    flex-direction: column;
+}
+
+.category{
+    position: relative;
+    width: 40%;
+    /* background-color: white; */
+}
+
+.category-dropdown{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 4px;
+    margin: 12px 0px;
+    border-radius: 6px;
+}
+
+.category-dropdown i{
+    display: flex;
+    align-items: center;
+}
+
+.category-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background: white;
+}
+
+.category-item{
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+.category-item img{
+    height: 30px;
+    margin-right: 20px;
+}
+
+.form-add-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-add-button div{
+    display: flex;
+    border: 1px solid black;
+    padding: 2px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-add-button div i{
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+
+.form-add-button div:hover{
+    background-color: white;
+}
+
+@media screen and (max-width:1024px) {
+    .form-item{
+        width: 100%;
+    }
+
+    .form-item input{
+        width: 90%;
+    }
+
+    .amount-input{
+        width: 50% !important;
+    }
+
+    .category{
+        width: 80%;
+    }
+}
